@@ -1,0 +1,156 @@
+:root {
+  --blanco: #fff;
+  --dark: #212121;
+  --primary: #ffc107;
+  --secondary: #0097a7;
+  --grey: #757575;
+}
+
+/** GLOBALES **/
+html {
+  font-size: 62.5%;
+  font-family: 'Krub', sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16rem; /* 1rem = 10px */
+  background-image: linear-gradient(
+    to top,
+    #fef6ff,
+    #ffecf6,
+    #ffe3e1,
+    #ffdec6,
+    #f8deae
+  );
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: var(--secondary);
+  color: var(--blanco);
+  padding: 0.8rem 3rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    width: auto;
+  }
+}
+
+/** TIPOGRAFÍA **/
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+/** UTILIDADES **/
+
+/** TÍTULOS **/
+.header__title {
+  text-transform: uppercase;
+}
+
+.header__title span {
+  font-size: 2rem;
+}
+
+/** NAVEGACIÓN PRINICIPAL **/
+.navbar--bg {
+  background-color: var(--secondary);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navbar__links {
+  text-decoration: none;
+  color: var(--blanco);
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.navbar__links:hover {
+  background-color: var(--primary);
+  color: var(--dark);
+}
+
+/** HERO SECTION **/
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45rem;
+  position: relative;
+}
+
+.hero__content {
+  position: absolute;
+  background-color: rgb(37 37 37 / 70%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__title {
+  color: var(--blanco);
+}
+
+.hero__ubication {
+  display: flex;
+  align-items: flex-end;
+  color: var(--blanco);
+}
