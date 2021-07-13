@@ -4,6 +4,7 @@
   --primary: #ffc107;
   --secondary: #0097a7;
   --grey: #757575;
+  --light-blue: #dfe9f3;
 }
 
 /** GLOBALES **/
@@ -23,13 +24,18 @@ html {
 
 body {
   font-size: 16rem; /* 1rem = 10px */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to top,
     #fef6ff,
     #ffecf6,
     #ffe3e1,
     #ffdec6,
     #f8deae
+  ); */
+  background-image: linear-gradient(
+    to top,
+    var(--light-blue) 0%,
+    var(--blanco) 100%
   );
 }
 
@@ -62,6 +68,15 @@ body {
   .btn {
     width: auto;
   }
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(66, 66, 66, 0.64);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(66, 66, 66, 0.64);
+  box-shadow: 0px 5px 15px 0px rgba(66, 66, 66, 0.64);
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 /** TIPOGRAFÍA **/
@@ -132,6 +147,7 @@ h3 {
   background-repeat: no-repeat;
   height: 45rem;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .hero__content {
